@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# StackOverflow Clone
+
+This project is a Stack Overflow clone built with Next.js and TypeScript for the frontend, and Appwrite for the backend services. The goal of this project is to create a robust platform where users can ask questions, provide answers, and engage with the community.
+
+## Features
+
+- User Authentication (Signup, Login, Logout)
+- Post Questions
+- Answer Questions
+- Vote on Questions and Answers
+- Comment on Questions and Answers
+- Search Functionality
+- User Profiles
+
+## Tech Stack
+
+- **Frontend**: Next.js, TypeScript
+- **Backend**: Appwrite
+- **Styling**: CSS Modules / Styled Components
+- **State Management**: Context API / Redux
+- **Database**: Appwrite Database
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js (>=14.x)
+- npm (>=6.x) or yarn (>=1.x)
+- Appwrite account
+
+### Installation
+
+1. **Clone the repository**
 
 ```bash
+git clone https://github.com/Prabal-verma/stack-overflow.git
+cd stack-overflow
+```
+
+2. **Install dependencies**
+
+```bash
+# using npm
+npm install
+
+# or using yarn
+yarn install
+```
+
+3. **Set up Appwrite**
+
+- Sign up for an account at [Appwrite](https://appwrite.io/).
+- Create a new project.
+- Create a new database and collection for questions, answers, and users.
+- Create the necessary attributes for each collection.
+- Set up authentication.
+
+4. **Create a `.env.local` file in the root directory**
+
+```env
+NEXT_PUBLIC_APPWRITE_HOST_URL=yourUrl
+NEXT_PUBLIC_APPWRITE_PROJECT_ID=yourProjectid
+APPWRITE_API_KEY=yourApiKey
+```
+
+5. **Run the development server**
+
+```bash
+# using npm
 npm run dev
-# or
+
+# or using yarn
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- `pages/`: Contains the Next.js pages.
+- `components/`: Contains the React components.
+- `styles/`: Contains the CSS Modules / Styled Components.
+- `contexts/`: Contains the Context API providers and hooks.
+- `utils/`: Contains utility functions.
+- `services/`: Contains the Appwrite service functions.
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are welcome! Please fork the repository and submit a pull request for any changes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`).
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+4. Push to the branch (`git push origin feature/AmazingFeature`).
+5. Open a pull request.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Prabal Verma - [your-email@example.com](mailto:dev@prabalverma.me)
+
+Project Link: [https://github.com/Prabal-verma/stack-overflow.git](https://github.com/Prabal-verma/stack-overflow.git)
+
+---
